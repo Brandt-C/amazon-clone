@@ -42,11 +42,53 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    
-
 }
 
 .row {
     justify-content: center;
     align-items: center;
 }
+
+.footer-container {  display: grid;
+    grid-template-columns: 1.6fr 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 1.4fr 0.9fr 0.9fr 0.9fr 0.9fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "map-img info-head shows-head social-head"
+      "map-img addy-icon show-1 social-1"
+      "map-img email-icon show-2 social-2"
+      "map-img call-icon show-3 social-3"
+      "map-img . show-4 social-4";
+}
+  
+.map-img { grid-area: map-img; }
+  
+.info-head { grid-area: info-head; }
+  
+.shows-head { grid-area: shows-head; }
+  
+.social-head { grid-area: social-head; }
+  
+.addy-icon { grid-area: addy-icon; }
+  
+.email-icon { grid-area: email-icon; }
+  
+.call-icon { grid-area: call-icon; }
+  
+.show-1 { grid-area: show-1; }
+  
+.show-2 { grid-area: show-2; }
+  
+.show-3 { grid-area: show-3; }
+  
+.show-4 { grid-area: show-4; }
+  
+.social-1 { grid-area: social-1; }
+  
+.social-2 { grid-area: social-2; }
+  
+.social-3 { grid-area: social-3; }
+  
+.social-4 { grid-area: social-4; }
+  
