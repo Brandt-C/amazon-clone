@@ -10,23 +10,23 @@
 }
 
 .flexbox-item {
+    color: white;
     width: auto;
     margin: 10px;
     border: 3px solid black;
-    color: white;
     font-weight: bold;
-    
 }
 
 .flexbox-item-1 {
-
+    color: white;
+    font-size: 135%;
 }
 
 .banner {
     position: relative;
     text-align: center;
     color: black;
-    width: 95%;
+    max-width: 100%;
 }
 
 .banner-text {
@@ -36,6 +36,7 @@
     transform: translate(-50%, -50%);
     font-size: 500%;
     font-weight: bold;
+    color: white;
 }
 
 .cards {
@@ -49,10 +50,14 @@
     align-items: center;
 }
 
-.footer-container {  display: grid;
+.footer-container {  
+    display: grid;
     grid-template-columns: 1.6fr 0.8fr 0.8fr 0.8fr;
     grid-template-rows: 1.4fr 0.9fr 0.9fr 0.9fr 0.9fr;
     gap: 0px 0px;
+    background-color: black;
+    color: white;
+    width: auto;
     grid-auto-flow: row;
     grid-template-areas:
       "map-img info-head shows-head social-head"
@@ -62,8 +67,20 @@
       "map-img . show-4 social-4";
 }
   
-.map-img { grid-area: map-img; }
+.map-img { 
+    grid-area: map-img;
+    align-items: center;
+    justify-content: center;
+    margin: 20%;
+    
+}
+#map-thumb {
+    max-height: 100%;
+}
   
+#grid-cell-headers {
+    
+}
 .info-head { grid-area: info-head; }
   
 .shows-head { grid-area: shows-head; }
