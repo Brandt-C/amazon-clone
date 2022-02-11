@@ -25,7 +25,8 @@
 .banner {
     position: relative;
     text-align: center;
-    color: white;
+    color: black;
+    width: 95%;
 }
 
 .banner-text {
@@ -35,4 +36,17 @@
     transform: translate(-50%, -50%);
     font-size: 500%;
     font-weight: bold;
+}
+
+.cards {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
 }
